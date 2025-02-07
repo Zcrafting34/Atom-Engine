@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Cristian_Dev\Documents\workspace\C\AtomEngine\Juego\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Cristian_Dev\Documents\workspace\C\AtomEngine\Juego\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{046D560D-262D-3ABD-980D-C7486ECF2A56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
