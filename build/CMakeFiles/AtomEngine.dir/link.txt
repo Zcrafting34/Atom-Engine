@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libAtomEngine.a CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.o CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o
+/usr/bin/ranlib lib/libAtomEngine.a

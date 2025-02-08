@@ -1,0 +1,28 @@
+#include "../../include/AtomEngine.h"
+
+
+Window::Window(const char* title, unsigned int width, unsigned int height)
+    : title(title), width(width), height(height) {}
+
+Window::~Window() {}
+
+int Window::Run(GameObject* scene) {
+
+    sf::RenderWindow window(
+        sf::VideoMode(
+        {static_cast<unsigned int>(this->width), static_cast<unsigned int>(this->height)}),
+        this->title
+    );
+
+    while (window.isOpen()){
+
+        while (const std::optional event = window.pollEvent()) {
+            if (event->is<sf::Event::Closed>()) window.close();
+        }
+
+        window.clear();
+        window.display();
+    }
+
+    return 0;
+}

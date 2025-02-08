@@ -1,41 +1,39 @@
-    #ifndef ATOM_ENGINE_H
-    #define ATOM_ENGINE_H
-    #pragma once
+#ifndef ATOM_ENGINE_H
+#define ATOM_ENGINE_H
+#include <sys/types.h>
+#pragma once
 
+#include <iostream>
+#include <vector>
+#include <string>
+#include "../../include/SFML/Audio.hpp"
+#include "../../include/SFML/Graphics.hpp"
+#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Window/VideoMode.hpp>
+#include <optional>
+#include "AtomMath.h"
 
-    #include <iostream>
-    #include <vector>
-    #include <string> 
-    
-   
-    //Classe base para GameObjects
-    //Interfaz para todos los objetos en general del Atom Engine
-    //Necesario para poder gestionar los objetos del juego
+class GameObject;
+class Window
+{
+private:
+    const char *title;
+    int width;
+    int height;
 
-   
-    class GameObject;
+public:
+    Window(const char *title, unsigned int width, unsigned int height);
+    ~Window();
 
-    class Window
-    {
-    private:
-        const char *title;
-        int width;
-        int height;
-
-
-    public:
-        Window(const char *title, int width, int height);
-        ~Window();
-
-        int Run(GameObject *scene);
-    };
+    int Run(GameObject *scene);
+};
 
     class GameObject
     {
         protected:
             std::string name;
             GameObject* parent;
-            
+
         public:
         std::vector<GameObject*> childrens;
         virtual std::string GetName() const = 0;
@@ -76,6 +74,40 @@
 
     };
 
+class Atom2D : public Atom {
+    protected:
+        AtomMath::Transform transform;
+    public:
+        //Constructor por defecto para objetos en 2D sin un transform inicial
+        Atom2D(std::string _name);
+        //Constructor con un transform inicial para Objetos en 2D
+        Atom2D(std::string _name, AtomMath::Transform _transform);
+        ~Atom2D();
+        //Establece la posicion de un Atom2D
+        void SetPosition(AtomMath::Vector2 position);
+        //Establece la escala de un Atomo2D
+        void SetScale(AtomMath::Vector2 scale);
+        //Establece la rotacion de un Atomo2D
+        void SetRotation(float rotation);
+        //Obten la posicion actual de un Atomo2D
+        AtomMath::Vector2 GetPosition();
+        //Obten la escala actual de un Atomo2D
+        AtomMath::Vector2 GetScale();
+        //Obten la rotacion actual de un Atomo2D
+        float GetRotation();
+    };
+
+    class Spr2D : public Atom2D {
+        private:
+            sf::Texture texture;
+            sf::Sprite sprite;
+        public:
+            Spr2D(std::string _name, AtomMath::Transform _transform, const char* _texture);
+            ~Spr2D();
+    };
+
+
+
     class Game
     {
         private:
@@ -84,18 +116,13 @@
             int height;
             Window* window;
             int nCmdShow;
-        
+
         public:
         Game(const char *title, int width, int height);
         ~Game();
 
         void Play(GameObject *scene);
     };
-
-
-
-
-
 
 
     #endif

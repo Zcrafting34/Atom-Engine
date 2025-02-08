@@ -2,7 +2,7 @@
 
 int main() {
 
-    Game* miJuego = new Game("Deneken", 800, 600);
+    Game* miJuego = new Game("Mi pinche Juego", 800, 600);
 
     SceneManager* manager = new SceneManager("manager");
 
