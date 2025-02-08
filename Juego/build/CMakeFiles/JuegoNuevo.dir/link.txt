@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o -o JuegoNuevo   -L/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/lib  -Wl,-rpath,/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/lib -lAtomEngine -lsfml-graphics-s -lsfml-audio-s -lsfml-network-s -lsfml-window-s -lsfml-system-s -lX11 -lXrandr -lXi -lXcursor -ludev
