@@ -4,7 +4,9 @@
 CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/main.cpp \
   /home/cristian_dev/Documentos/C++/Atom-Engine/include/SFML/Audio.hpp \
   /home/cristian_dev/Documentos/C++/Atom-Engine/include/SFML/Graphics.hpp \
-  /home/cristian_dev/Documentos/C++/Atom-Engine/include/AtomEngine.h \
+  /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/include/AtomEngine.h \
+  /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/include/AtomMath.h \
+  /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/flappy.cpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -18,9 +20,18 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -137,6 +148,7 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
   /usr/include/c++/14/bits/shared_ptr.h \
   /usr/include/c++/14/bits/shared_ptr_atomic.h \
   /usr/include/c++/14/bits/shared_ptr_base.h \
+  /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/sstream.tcc \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_function.h \
@@ -171,6 +183,7 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
   /usr/include/c++/14/cerrno \
   /usr/include/c++/14/chrono \
   /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
   /usr/include/c++/14/codecvt \
   /usr/include/c++/14/compare \
   /usr/include/c++/14/concepts \
@@ -216,6 +229,18 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
   /usr/include/c++/14/string \
   /usr/include/c++/14/string_view \
   /usr/include/c++/14/system_error \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
   /usr/include/c++/14/tuple \
   /usr/include/c++/14/type_traits \
   /usr/include/c++/14/typeinfo \
@@ -247,6 +272,7 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
   /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -374,8 +400,6 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/local/include/SFML/Window/Event.inl:
 
-/usr/local/include/SFML/Window/ContextSettings.hpp:
-
 /usr/local/include/SFML/Window/Context.hpp:
 
 /usr/local/include/SFML/Window/Clipboard.hpp:
@@ -425,8 +449,6 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 /usr/local/include/SFML/Graphics/Sprite.hpp:
 
 /usr/local/include/SFML/Graphics/Shape.hpp:
-
-/usr/local/include/SFML/Graphics/Shader.hpp:
 
 /usr/local/include/SFML/Graphics/RenderTexture.hpp:
 
@@ -490,21 +512,59 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/wchar.h:
 
+/usr/include/time.h:
+
+/usr/include/sys/single_threaded.h:
+
+/usr/local/include/SFML/Window/GlResource.hpp:
+
+/usr/local/include/SFML/System/Utf.inl:
+
+/usr/include/sys/select.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/local/include/SFML/Audio/SoundRecorder.hpp:
+
+/usr/include/pthread.h:
+
+/usr/include/math.h:
+
+/usr/include/locale.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/errno.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/time_members.h:
+
+/usr/local/include/SFML/Audio/SoundBufferRecorder.hpp:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/messages_members.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h:
+
 /usr/local/include/SFML/Audio/SoundChannel.hpp:
 
 /usr/include/c++/14/bits/streambuf.tcc:
 
 /usr/include/c++/14/ios:
-
-/usr/include/c++/14/bits/move.h:
-
-/usr/local/include/SFML/Window/WindowBase.hpp:
-
-/usr/include/c++/14/backward/auto_ptr.h:
-
-/usr/local/include/SFML/System/FileInputStream.hpp:
-
-/usr/include/bits/types/sigset_t.h:
 
 /usr/include/c++/14/bits/ios_base.h:
 
@@ -512,17 +572,9 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/bits/hashtable.h:
 
-/usr/include/c++/14/bits/hash_bytes.h:
-
-/usr/include/c++/14/bits/char_traits.h:
-
 /usr/local/include/SFML/Audio/OutputSoundFile.hpp:
 
 /usr/include/c++/14/bits/functexcept.h:
-
-/usr/local/include/SFML/Audio/SoundRecorder.hpp:
-
-/usr/include/pthread.h:
 
 /usr/include/c++/14/bits/erase_if.h:
 
@@ -545,6 +597,10 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 /usr/local/include/SFML/Audio/SoundSource.hpp:
 
 /usr/include/bits/pthreadtypes.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/14/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/14/bits/fs_fwd.h:
 
@@ -572,21 +628,17 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/bits/allocator.h:
 
+/usr/include/stdio.h:
+
+/usr/include/bits/wordsize.h:
+
 /usr/include/c++/14/bits/exception_defines.h:
+
+/usr/include/c++/14/tr1/legendre_function.tcc:
 
 /usr/include/bits/wctype-wchar.h:
 
 /usr/include/bits/timesize.h:
-
-/usr/local/include/SFML/Window/Touch.hpp:
-
-/usr/include/c++/14/bits/locale_conv.h:
-
-/usr/include/c++/14/iosfwd:
-
-/usr/include/bits/types/timer_t.h:
-
-/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/main.cpp:
 
 /usr/include/c++/14/bits/locale_classes.h:
 
@@ -600,77 +652,29 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/streambuf:
 
-/usr/include/bits/stdint-least.h:
+/usr/include/c++/14/bits/fs_ops.h:
 
-/usr/include/alloca.h:
+/usr/include/bits/types/struct_timespec.h:
 
-/home/cristian_dev/Documentos/C++/Atom-Engine/include/SFML/Audio.hpp:
+/usr/include/c++/14/concepts:
 
-/usr/include/c++/14/cwchar:
+/usr/include/bits/waitflags.h:
 
-/usr/include/c++/14/stdexcept:
+/usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/bits/select.h:
-
-/usr/include/c++/14/bits/invoke.h:
-
-/usr/include/c++/14/bits/hashtable_policy.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h:
-
-/usr/include/c++/14/bits/basic_ios.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/14/bits/locale_facets_nonio.h:
-
-/usr/local/include/SFML/Graphics/Rect.inl:
-
-/home/cristian_dev/Documentos/C++/Atom-Engine/include/SFML/Graphics.hpp:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/time_members.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/c++/14/bits/quoted_string.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/c++/14/functional:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/bits/struct_rwlock.h:
+/usr/include/c++/14/ratio:
 
 /usr/include/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/14/bits/charconv.h:
+/usr/include/bits/struct_rwlock.h:
 
-/usr/include/c++/14/bits/basic_ios.tcc:
+/usr/local/include/SFML/System/FileInputStream.hpp:
 
-/usr/include/c++/14/pstl/glue_memory_defs.h:
+/usr/include/bits/types/sigset_t.h:
 
-/usr/include/bits/time.h:
+/usr/local/include/SFML/Window/WindowBase.hpp:
 
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/c++/14/bits/localefwd.h:
-
-/usr/local/include/SFML/Audio/SoundFileFactory.inl:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/floatn-common.h:
+/usr/include/c++/14/backward/auto_ptr.h:
 
 /usr/local/include/SFML/Graphics/Transformable.hpp:
 
@@ -678,31 +682,9 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/bits/shared_ptr_atomic.h:
 
-/usr/local/include/SFML/Graphics/ConvexShape.hpp:
-
-/usr/include/c++/14/cassert:
-
-/home/cristian_dev/Documentos/C++/Atom-Engine/include/AtomEngine.h:
+/usr/include/bits/iscanonical.h:
 
 /usr/include/asm-generic/errno.h:
-
-/usr/include/c++/14/bits/memory_resource.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/local/include/SFML/System/MemoryInputStream.hpp:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/bits/setjmp.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/14/bits/stl_algobase.h:
-
-/usr/include/c++/14/bits/stl_iterator.h:
 
 /usr/local/include/SFML/Audio/Export.hpp:
 
@@ -710,15 +692,67 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/bits/sstream.tcc:
 
+/usr/include/c++/14/bits/hash_bytes.h:
+
+/usr/include/c++/14/bits/char_traits.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/c++/14/filesystem:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/c++/14/debug/assertions.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/c++/14/bits/locale_facets_nonio.h:
+
+/usr/local/include/SFML/Graphics/Rect.inl:
+
+/home/cristian_dev/Documentos/C++/Atom-Engine/include/SFML/Graphics.hpp:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/c++/14/bits/quoted_string.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/14/tr1/poly_hermite.tcc:
+
+/usr/include/bits/errno.h:
+
+/usr/include/bits/timex.h:
+
+/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/main.cpp:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/libintl.h:
+
+/usr/include/c++/14/bits/locale_classes.tcc:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/c++/14/functional:
+
+/usr/include/c++/14/bits/basic_ios.h:
+
 /usr/include/gnu/stubs.h:
 
 /usr/include/c++/14/bits/fs_dir.h:
 
 /usr/include/c++/14/bits/exception.h:
-
-/usr/include/c++/14/bits/memoryfwd.h:
-
-/usr/include/c++/14/bits/unordered_set.h:
 
 /usr/include/c++/14/cctype:
 
@@ -734,49 +768,99 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/bits/struct_mutex.h:
 
-/usr/local/include/SFML/Graphics/Drawable.hpp:
+/home/cristian_dev/Documentos/C++/Atom-Engine/include/SFML/Audio.hpp:
 
-/usr/include/bits/thread-shared-types.h:
+/usr/include/c++/14/cwchar:
 
-/usr/include/c++/14/bits/ostream_insert.h:
+/usr/include/bits/fp-logb.h:
 
-/usr/include/c++/14/bits/stl_pair.h:
+/usr/include/c++/14/tr1/special_function_util.h:
 
-/usr/include/c++/14/bits/cxxabi_forced.h:
+/usr/include/c++/14/stdexcept:
 
-/usr/include/endian.h:
+/usr/local/include/SFML/Audio/SoundFileFactory.inl:
 
-/usr/include/stdint.h:
+/usr/include/bits/types.h:
 
-/usr/include/bits/endian.h:
+/usr/include/bits/floatn-common.h:
 
-/usr/include/c++/14/cstdlib:
+/usr/local/include/SFML/Graphics/ConvexShape.hpp:
 
-/usr/include/c++/14/system_error:
+/usr/include/c++/14/cassert:
 
-/usr/include/bits/types/error_t.h:
+/usr/include/bits/types/locale_t.h:
 
-/usr/include/bits/wordsize.h:
+/usr/include/bits/mathcalls-helper-functions.h:
 
-/usr/include/stdio.h:
+/usr/local/include/SFML/Graphics/Shader.hpp:
+
+/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/include/AtomEngine.h:
+
+/usr/include/bits/types/time_t.h:
+
+/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/flappy.cpp:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/c++/14/bits/charconv.h:
+
+/usr/include/c++/14/bits/basic_ios.tcc:
+
+/usr/include/c++/14/pstl/glue_memory_defs.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/local/include/SFML/Window/ContextSettings.hpp:
+
+/usr/include/bits/math-vector.h:
 
 /usr/include/c++/14/bits/exception_ptr.h:
 
-/usr/include/bits/types/FILE.h:
+/usr/include/bits/types/__fpos_t.h:
 
-/usr/include/c++/14/bits/streambuf_iterator.h:
+/usr/local/include/SFML/System/MemoryInputStream.hpp:
 
-/usr/include/c++/14/bits/cxxabi_init_exception.h:
+/usr/include/bits/types/clock_t.h:
 
-/usr/local/include/SFML/Window/Keyboard.hpp:
+/usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
 
-/usr/include/c++/14/string_view:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/bits/atomic_wide_counter.h:
+/usr/include/c++/14/bits/stl_algobase.h:
 
-/usr/include/bits/stdint-intn.h:
+/usr/include/c++/14/bits/stl_iterator.h:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/local/include/SFML/Window/Touch.hpp:
+
+/usr/include/c++/14/bits/locale_conv.h:
+
+/usr/include/c++/14/iosfwd:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/c++/14/ext/string_conversions.h:
+
+/usr/include/c++/14/bits/invoke.h:
+
+/usr/include/c++/14/bits/hashtable_policy.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/atomic_word.h:
+
+/usr/include/c++/14/bits/ptr_traits.h:
+
+/usr/include/c++/14/bits/locale_facets_nonio.tcc:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/bits/types/error_t.h:
 
 /usr/include/asm/errno.h:
 
@@ -786,43 +870,67 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/14/bits/node_handle.h:
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/c++/14/bits/stl_raw_storage_iter.h:
+
+/usr/local/include/SFML/Graphics/Drawable.hpp:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/14/bits/cxxabi_forced.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/14/cstdlib:
+
+/usr/include/c++/14/system_error:
 
 /usr/include/features.h:
 
-/usr/include/bits/types/__FILE.h:
+/usr/include/c++/14/bits/node_handle.h:
 
 /usr/include/bits/sched.h:
 
-/usr/local/include/SFML/Graphics/Texture.hpp:
+/usr/include/bits/types/__FILE.h:
 
-/usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h:
+/usr/include/c++/14/bits/streambuf_iterator.h:
+
+/usr/include/c++/14/bits/cxxabi_init_exception.h:
+
+/usr/local/include/SFML/Window/Keyboard.hpp:
+
+/usr/include/c++/14/string_view:
+
+/usr/include/c++/14/tr1/poly_laguerre.tcc:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/local/include/SFML/Graphics/Texture.hpp:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/include/bits/types/locale_t.h:
+/usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h:
 
-/usr/include/c++/14/bits/locale_facets_nonio.tcc:
+/usr/include/bits/stdint-intn.h:
 
-/usr/include/c++/14/bits/ptr_traits.h:
+/usr/include/bits/types/clockid_t.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/c++/14/bits/specfun.h:
 
-/usr/include/ctype.h:
+/usr/include/c++/14/bits/localefwd.h:
 
-/usr/include/bits/types/struct_sched_param.h:
+/usr/include/c++/14/bits/memory_resource.h:
 
-/usr/include/c++/14/ratio:
+/usr/include/c++/14/bits/unordered_set.h:
 
-/usr/include/c++/14/bits/fs_ops.h:
+/usr/include/c++/14/bits/memoryfwd.h:
 
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/c++/14/bits/stl_pair.h:
 
-/usr/include/c++/14/concepts:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/14/bits/stl_raw_storage_iter.h:
+/usr/include/c++/14/bits/ostream_insert.h:
 
 /usr/include/c++/14/bits/range_access.h:
 
@@ -841,6 +949,8 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 /usr/include/bits/wchar.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/c++/14/tr1/beta_function.tcc:
 
 /usr/include/c++/14/bits/shared_ptr_base.h:
 
@@ -880,8 +990,6 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/bits/stl_relops.h:
 
-/usr/include/features-time64.h:
-
 /usr/include/c++/14/bits/stl_tempbuf.h:
 
 /usr/include/c++/14/bits/stl_uninitialized.h:
@@ -892,17 +1000,9 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/optional:
 
-/usr/include/c++/14/bits/locale_classes.tcc:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/libintl.h:
-
 /usr/include/c++/14/bits/stream_iterator.h:
 
 /usr/include/c++/14/bits/stringfwd.h:
-
-/usr/include/gnu/stubs-64.h:
 
 /usr/include/c++/14/iterator:
 
@@ -918,8 +1018,6 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/bits/vector.tcc:
 
-/usr/include/c++/14/x86_64-redhat-linux/bits/messages_members.h:
-
 /usr/include/c++/14/bits/version.h:
 
 /usr/include/c++/14/cerrno:
@@ -928,13 +1026,13 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/chrono:
 
-/usr/include/sys/single_threaded.h:
+/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/include/AtomMath.h:
 
 /usr/include/c++/14/codecvt:
 
-/usr/include/c++/14/bits/parse_numbers.h:
-
 /usr/include/c++/14/ostream:
+
+/usr/include/c++/14/bits/parse_numbers.h:
 
 /usr/include/c++/14/compare:
 
@@ -954,19 +1052,13 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/cwctype:
 
-/usr/include/c++/14/debug/assertions.h:
-
-/usr/local/include/SFML/System/Sleep.hpp:
-
-/usr/include/c++/14/debug/debug.h:
-
-/usr/include/errno.h:
-
 /usr/local/include/SFML/Window/Mouse.hpp:
 
 /usr/include/c++/14/bits/concept_check.h:
 
 /usr/include/c++/14/bits/ostream.tcc:
+
+/usr/include/bits/mathcalls.h:
 
 /usr/include/c++/14/bits/align.h:
 
@@ -984,8 +1076,6 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/ext/concurrence.h:
 
-/usr/include/c++/14/ext/string_conversions.h:
-
 /usr/include/c++/14/ext/type_traits.h:
 
 /usr/local/include/SFML/Window/Sensor.hpp:
@@ -998,10 +1088,6 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/istream:
 
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h:
-
-/usr/include/stdlib.h:
-
 /usr/include/c++/14/locale:
 
 /usr/include/c++/14/utility:
@@ -1010,15 +1096,39 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/local/include/SFML/Window/Event.hpp:
 
+/usr/include/c++/14/cmath:
+
 /usr/include/c++/14/sstream:
 
 /usr/include/c++/14/string:
 
+/usr/include/c++/14/tr1/bessel_function.tcc:
+
+/usr/include/c++/14/bits/move.h:
+
+/usr/include/c++/14/tr1/ell_integral.tcc:
+
+/usr/include/c++/14/tr1/exp_integral.tcc:
+
+/usr/include/c++/14/typeinfo:
+
+/usr/include/c++/14/tr1/gamma.tcc:
+
+/usr/local/include/SFML/System/Sleep.hpp:
+
+/usr/include/c++/14/debug/debug.h:
+
+/usr/include/c++/14/tr1/hypergeometric.tcc:
+
+/usr/include/c++/14/tr1/modified_bessel_func.tcc:
+
+/usr/local/include/SFML/Audio/Sound.hpp:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/ctype_base.h:
+
 /usr/include/c++/14/tuple:
 
 /usr/include/c++/14/type_traits:
-
-/usr/include/c++/14/typeinfo:
 
 /usr/include/c++/14/unordered_map:
 
@@ -1028,21 +1138,9 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h:
 
-/usr/local/include/SFML/Window/GlResource.hpp:
-
-/usr/local/include/SFML/System/Utf.inl:
-
-/usr/include/sys/select.h:
-
 /usr/include/c++/14/bits/predefined_ops.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h:
-
-/usr/include/locale.h:
-
-/usr/local/include/SFML/Audio/Sound.hpp:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/ctype_base.h:
 
 /usr/local/include/SFML/Window/Joystick.hpp:
 
@@ -1053,23 +1151,3 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: /home/cristian_dev/Documentos/C++/Atom
 /usr/include/c++/14/initializer_list:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/error_constants.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h:
-
-/usr/local/include/SFML/Audio/SoundBufferRecorder.hpp:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/wctype.h:
-
-/usr/include/c++/14/filesystem:
-
-/usr/include/sched.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/time.h:

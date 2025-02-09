@@ -81,12 +81,12 @@ clean: CMakeFiles/AtomEngine.dir/clean
 CMakeFiles/AtomEngine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target AtomEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target AtomEngine"
 .PHONY : CMakeFiles/AtomEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AtomEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AtomEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/AtomEngine.dir/rule

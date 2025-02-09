@@ -9,6 +9,8 @@ link_directories(${SFML_LIB_DIR})
 
 set(SOURCE_FILES
     ${PROJECT_SOURCE_DIR}/src/core/Atom.cpp
+    ${PROJECT_SOURCE_DIR}/src/core/Atom2D.cpp
+    ${PROJECT_SOURCE_DIR}/src/core/Spr2D.cpp
     ${PROJECT_SOURCE_DIR}/src/core/Game.cpp
     ${PROJECT_SOURCE_DIR}/src/core/SceneManager.cpp
     ${PROJECT_SOURCE_DIR}/src/SFML/window.cpp

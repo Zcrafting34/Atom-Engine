@@ -1,4 +1,5 @@
 #include "../../include/AtomEngine.h"
+#include <SFML/Graphics/RenderWindow.hpp>
 
 Atom2D::Atom2D(std::string _name) : Atom(_name){
     this->transform = AtomMath::Transform {
@@ -6,11 +7,15 @@ Atom2D::Atom2D(std::string _name) : Atom(_name){
         AtomMath::Vector2{0,0},
         1.0
     };
-
 }
 
-Atom2D::Atom2D(std::string _name, AtomMath::Transform _transform) : Atom(_name) {
-    this->transform = _transform;
+Atom2D::~Atom2D() {}
+Atom2D::Atom2D(std::string _name, AtomMath::Vector2 _position) : Atom(_name) {
+    this->transform = AtomMath::Transform {
+        _position,
+        AtomMath::Vector2{0,0},
+        1.0
+    };
 }
 
 void Atom2D::SetPosition(AtomMath::Vector2 position) {
@@ -35,4 +40,10 @@ AtomMath::Vector2 Atom2D::GetScale() {
 
 float Atom2D::GetRotation() {
     return this->transform.rotation;
+}
+
+void Atom2D::draw(sf::RenderWindow& window) {
+    for (auto child : this->childrens) {
+        child->draw(window);
+    }
 }

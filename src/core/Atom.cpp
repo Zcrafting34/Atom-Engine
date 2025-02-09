@@ -1,5 +1,6 @@
 #include "../../include/AtomEngine.h"
-
+#include <SFML/Graphics/RenderWindow.hpp>
+#include <memory>
 
 
 Atom::Atom(std::string _name) {
@@ -18,7 +19,6 @@ void Atom::SetParent(GameObject* p) {
 }
 
 void Atom::AddChild(GameObject* child) {
-    this->childrens.push_back(child);
+    childrens.push_back(std::shared_ptr<GameObject>(child));
+    child->SetParent(this);
 }
-
-

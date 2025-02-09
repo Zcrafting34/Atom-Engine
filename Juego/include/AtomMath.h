@@ -1,7 +1,6 @@
 #ifndef ATOM_MATH_H
 #define ATOM_MATH_H
 #pragma once
-
 namespace AtomMath {
 struct Vector2
 {

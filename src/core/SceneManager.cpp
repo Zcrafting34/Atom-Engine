@@ -23,7 +23,3 @@ GameObject* SceneManager::GetCurrentScene() {
 void SceneManager::AddChild(GameObject* child) {
     this->scenes.push_back(child);
 }
-
-
-
-

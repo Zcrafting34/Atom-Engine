@@ -83,10 +83,38 @@ CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom.cpp -o CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.s
 
+CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o: CMakeFiles/AtomEngine.dir/flags.make
+CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o: /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom2D.cpp
+CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o: CMakeFiles/AtomEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o -MF CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o.d -o CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o -c /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom2D.cpp
+
+CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom2D.cpp > CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.i
+
+CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom2D.cpp -o CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.s
+
+CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o: CMakeFiles/AtomEngine.dir/flags.make
+CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o: /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Spr2D.cpp
+CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o: CMakeFiles/AtomEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o -MF CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o.d -o CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o -c /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Spr2D.cpp
+
+CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Spr2D.cpp > CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.i
+
+CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Spr2D.cpp -o CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.s
+
 CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o: CMakeFiles/AtomEngine.dir/flags.make
 CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o: /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Game.cpp
 CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o: CMakeFiles/AtomEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o -MF CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o.d -o CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o -c /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Game.cpp
 
 CMakeFiles/AtomEngine.dir/src/core/Game.cpp.i: cmake_force
@@ -100,7 +128,7 @@ CMakeFiles/AtomEngine.dir/src/core/Game.cpp.s: cmake_force
 CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o: CMakeFiles/AtomEngine.dir/flags.make
 CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o: /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/SceneManager.cpp
 CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o: CMakeFiles/AtomEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o -MF CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o.d -o CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o -c /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/SceneManager.cpp
 
 CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.i: cmake_force
@@ -114,7 +142,7 @@ CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.s: cmake_force
 CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o: CMakeFiles/AtomEngine.dir/flags.make
 CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o: /home/cristian_dev/Documentos/C++/Atom-Engine/src/SFML/window.cpp
 CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o: CMakeFiles/AtomEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o -MF CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o.d -o CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o -c /home/cristian_dev/Documentos/C++/Atom-Engine/src/SFML/window.cpp
 
 CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.i: cmake_force
@@ -128,6 +156,8 @@ CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.s: cmake_force
 # Object files for target AtomEngine
 AtomEngine_OBJECTS = \
 "CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.o" \
+"CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o" \
+"CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o" \
 "CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o" \
 "CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o" \
 "CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o"
@@ -136,12 +166,14 @@ AtomEngine_OBJECTS = \
 AtomEngine_EXTERNAL_OBJECTS =
 
 lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.o
+lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o
+lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o
 lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o
 lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o
 lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o
 lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/build.make
 lib/libAtomEngine.a: CMakeFiles/AtomEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library lib/libAtomEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library lib/libAtomEngine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/AtomEngine.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AtomEngine.dir/link.txt --verbose=$(VERBOSE)
 

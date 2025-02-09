@@ -177,6 +177,30 @@ src/core/Atom.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.s
 .PHONY : src/core/Atom.cpp.s
 
+src/core/Atom2D.o: src/core/Atom2D.cpp.o
+.PHONY : src/core/Atom2D.o
+
+# target to build an object file
+src/core/Atom2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o
+.PHONY : src/core/Atom2D.cpp.o
+
+src/core/Atom2D.i: src/core/Atom2D.cpp.i
+.PHONY : src/core/Atom2D.i
+
+# target to preprocess a source file
+src/core/Atom2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.i
+.PHONY : src/core/Atom2D.cpp.i
+
+src/core/Atom2D.s: src/core/Atom2D.cpp.s
+.PHONY : src/core/Atom2D.s
+
+# target to generate assembly for a file
+src/core/Atom2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.s
+.PHONY : src/core/Atom2D.cpp.s
+
 src/core/Game.o: src/core/Game.cpp.o
 .PHONY : src/core/Game.o
 
@@ -225,6 +249,30 @@ src/core/SceneManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.s
 .PHONY : src/core/SceneManager.cpp.s
 
+src/core/Spr2D.o: src/core/Spr2D.cpp.o
+.PHONY : src/core/Spr2D.o
+
+# target to build an object file
+src/core/Spr2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o
+.PHONY : src/core/Spr2D.cpp.o
+
+src/core/Spr2D.i: src/core/Spr2D.cpp.i
+.PHONY : src/core/Spr2D.i
+
+# target to preprocess a source file
+src/core/Spr2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.i
+.PHONY : src/core/Spr2D.cpp.i
+
+src/core/Spr2D.s: src/core/Spr2D.cpp.s
+.PHONY : src/core/Spr2D.s
+
+# target to generate assembly for a file
+src/core/Spr2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AtomEngine.dir/build.make CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.s
+.PHONY : src/core/Spr2D.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,12 +288,18 @@ help:
 	@echo "... src/core/Atom.o"
 	@echo "... src/core/Atom.i"
 	@echo "... src/core/Atom.s"
+	@echo "... src/core/Atom2D.o"
+	@echo "... src/core/Atom2D.i"
+	@echo "... src/core/Atom2D.s"
 	@echo "... src/core/Game.o"
 	@echo "... src/core/Game.i"
 	@echo "... src/core/Game.s"
 	@echo "... src/core/SceneManager.o"
 	@echo "... src/core/SceneManager.i"
 	@echo "... src/core/SceneManager.s"
+	@echo "... src/core/Spr2D.o"
+	@echo "... src/core/Spr2D.i"
+	@echo "... src/core/Spr2D.s"
 .PHONY : help
 
 

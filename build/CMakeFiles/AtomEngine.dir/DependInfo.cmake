@@ -10,8 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/cristian_dev/Documentos/C++/Atom-Engine/src/SFML/window.cpp" "CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o" "gcc" "CMakeFiles/AtomEngine.dir/src/SFML/window.cpp.o.d"
   "/home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom.cpp" "CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.o" "gcc" "CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.o.d"
+  "/home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom2D.cpp" "CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o" "gcc" "CMakeFiles/AtomEngine.dir/src/core/Atom2D.cpp.o.d"
   "/home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Game.cpp" "CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o" "gcc" "CMakeFiles/AtomEngine.dir/src/core/Game.cpp.o.d"
   "/home/cristian_dev/Documentos/C++/Atom-Engine/src/core/SceneManager.cpp" "CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o" "gcc" "CMakeFiles/AtomEngine.dir/src/core/SceneManager.cpp.o.d"
+  "/home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Spr2D.cpp" "CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o" "gcc" "CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

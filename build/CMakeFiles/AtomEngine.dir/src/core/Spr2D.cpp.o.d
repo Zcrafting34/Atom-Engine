@@ -1,5 +1,5 @@
-CMakeFiles/AtomEngine.dir/src/core/Atom.cpp.o: \
- /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Atom.cpp \
+CMakeFiles/AtomEngine.dir/src/core/Spr2D.cpp.o: \
+ /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/Spr2D.cpp \
  /usr/include/stdc-predef.h \
  /home/cristian_dev/Documentos/C++/Atom-Engine/src/core/../../include/AtomEngine.h \
  /home/cristian_dev/Documentos/C++/Atom-Engine/include/SFML/Graphics/Sprite.hpp \

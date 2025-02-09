@@ -1,9 +1,11 @@
 #ifndef ATOM_ENGINE_H
 #define ATOM_ENGINE_H
+#include <SFML/Graphics/Sprite.hpp>
 #include <sys/types.h>
 #pragma once
 
 #include <iostream>
+#include <memory>
 #include <vector>
 #include <string>
 #include "../../include/SFML/Audio.hpp"
@@ -14,8 +16,7 @@
 #include "AtomMath.h"
 
 class GameObject;
-class Window
-{
+class Window {
 private:
     const char *title;
     int width;
@@ -28,60 +29,62 @@ public:
     int Run(GameObject *scene);
 };
 
-    class GameObject
-    {
-        protected:
-            std::string name;
-            GameObject* parent;
+class GameObject {
+    protected:
+        std::string name;
+        GameObject* parent;
 
-        public:
-        std::vector<GameObject*> childrens;
-        virtual std::string GetName() const = 0;
-        virtual GameObject* GetParent() const = 0;
-        virtual void SetParent(GameObject* parent) = 0;
-        virtual void AddChild(GameObject* child) = 0;
-    };
+    public:
+    std::vector<std::shared_ptr<GameObject>> childrens;
+    virtual std::string GetName() const = 0;
+    virtual GameObject* GetParent() const = 0;
+    virtual void SetParent(GameObject* parent) = 0;
+    virtual void AddChild(GameObject* child) = 0;
+    virtual void draw(sf::RenderWindow& window) = 0;
+    virtual ~GameObject() = default;
+};
 
-    //Clase que se encarga de manejar las escenas del juego
-    //Necesario para poder gestionar las escenas del juego
+class ObjectDrawable {
+    public:
+        virtual ~ObjectDrawable() = default;
+        virtual void draw(sf::RenderWindow&) = 0;
+};
 
-    class SceneManager
-    {
-        private:
-            std::string name;
-            std::vector<GameObject*> scenes;
-            GameObject *currentScene;
-        public:
-            SceneManager(std::string _name);
-            ~SceneManager();
-            virtual void SetCurrentScene(GameObject *gameObject);
-            virtual GameObject* GetCurrentScene();
-            virtual void AddChild(GameObject *child);
-    };
+//Clase que se encarga de manejar las escenas del juego
+//Necesario para poder gestionar las escenas del jueg
+class SceneManager {
+    private:
+        std::string name;
+        std::vector<GameObject*> scenes;
+        GameObject *currentScene;
+    public:
+        SceneManager(std::string _name);
+        ~SceneManager();
+        virtual void SetCurrentScene(GameObject *gameObject);
+        virtual GameObject* GetCurrentScene();
+        virtual void AddChild(GameObject *child);
+};
 
+//Un Atom es el obejto mas basico y primitivo de Atom Engine
+class Atom : public GameObject {
+    public:
+        Atom(std::string _name);
+        ~Atom(){};
+        virtual std::string GetName() const override;
+        virtual GameObject* GetParent() const override;
+        virtual void SetParent(GameObject* parent) override;
+        virtual void AddChild(GameObject* child) override;
+        virtual void draw(sf::RenderWindow& window) override {};
+};
 
-
-    //Un Atom es el obejto mas basico y primitivo de Atom Engine
-    class Atom : public GameObject
-    {
-        public:
-            Atom(std::string _name);
-            ~Atom();
-            virtual std::string GetName() const override;
-            virtual GameObject* GetParent() const override;
-            virtual void SetParent(GameObject* parent) override;
-            virtual void AddChild(GameObject* child) override;
-
-    };
-
-class Atom2D : public Atom {
+class Atom2D : public Atom , public ObjectDrawable {
     protected:
         AtomMath::Transform transform;
     public:
         //Constructor por defecto para objetos en 2D sin un transform inicial
         Atom2D(std::string _name);
         //Constructor con un transform inicial para Objetos en 2D
-        Atom2D(std::string _name, AtomMath::Transform _transform);
+        Atom2D(std::string _name, AtomMath::Vector2 position);
         ~Atom2D();
         //Establece la posicion de un Atom2D
         void SetPosition(AtomMath::Vector2 position);
@@ -95,34 +98,39 @@ class Atom2D : public Atom {
         AtomMath::Vector2 GetScale();
         //Obten la rotacion actual de un Atomo2D
         float GetRotation();
+        void draw(sf::RenderWindow& window) override;
     };
 
-    class Spr2D : public Atom2D {
-        private:
-            sf::Texture texture;
-            sf::Sprite sprite;
-        public:
-            Spr2D(std::string _name, AtomMath::Transform _transform, const char* _texture);
-            ~Spr2D();
-    };
+class Spr2D : public Atom2D  {
+    private:
+        sf::Texture* texture = nullptr;
+        sf::Sprite* sprite = nullptr;
+    public:
+        Spr2D(std::string _name, const char* _texture);
+        Spr2D(std::string _name, AtomMath::Vector2 _position, const char* _texture);
 
+        sf::Sprite GetSprite();
+        sf::Texture GetTexture();
+        void SetPosition(AtomMath::Vector2 position);
+        void SetSprite(const char* _texture);
+        void draw(sf::RenderWindow& window) override;
+        ~Spr2D(){};
+};
 
+class Game
+{
+    private:
+        const char *title;
+        int width;
+        int height;
+        Window* window;
+        int nCmdShow;
 
-    class Game
-    {
-        private:
-            const char *title;
-            int width;
-            int height;
-            Window* window;
-            int nCmdShow;
+    public:
+    Game(const char *title, int width, int height);
+    ~Game();
 
-        public:
-        Game(const char *title, int width, int height);
-        ~Game();
+    void Play(GameObject *scene);
+};
 
-        void Play(GameObject *scene);
-    };
-
-
-    #endif
+#endif

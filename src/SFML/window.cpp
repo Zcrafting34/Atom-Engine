@@ -1,4 +1,5 @@
 #include "../../include/AtomEngine.h"
+#include <SFML/Graphics/Color.hpp>
 
 
 Window::Window(const char* title, unsigned int width, unsigned int height)
@@ -20,7 +21,8 @@ int Window::Run(GameObject* scene) {
             if (event->is<sf::Event::Closed>()) window.close();
         }
 
-        window.clear();
+        window.clear(sf::Color::White);
+        scene->draw(window);
         window.display();
     }
 

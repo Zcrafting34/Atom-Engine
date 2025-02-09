@@ -1,14 +1,15 @@
-#include "../../include/AtomEngine.h"
+#include "../include/AtomEngine.h"
+#include "./flappy.cpp"
 
 int main() {
+    Game* miJuego = new Game("Juego con atom engine", 1080, 720);
+    SceneManager* manejadorEscenas = new SceneManager("manager");
 
-    Game* miJuego = new Game("Mi pinche Juego", 800, 600);
+    Atom2D* mundo = new Atom2D("mundo");
+    Bird* pajaro = new Bird("pajaro", "assets/pajaraso.png");
+    mundo -> AddChild(pajaro);
 
-    SceneManager* manager = new SceneManager("manager");
+    manejadorEscenas -> SetCurrentScene(mundo);
 
-    Atom* miAtomo = new Atom("mi atomo");
-
-    manager->SetCurrentScene(miAtomo);
-
-    miJuego->Play(manager->GetCurrentScene());
+    miJuego -> Play(manejadorEscenas -> GetCurrentScene());
 }
