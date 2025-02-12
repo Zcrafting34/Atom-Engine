@@ -198,12 +198,6 @@ JuegoNuevo_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 JuegoNuevo_SOURCE_DIR:STATIC=/home/cristian_dev/Documentos/C++/Atom-Engine/Juego
 
-//The directory containing a CMake configuration file for SFML.
-SFML_DIR:PATH=/usr/local/lib64/cmake/SFML
-
-//Path to a file.
-SFML_DOC_DIR:PATH=/usr/share/doc/SFML
-
 
 ########################
 # INTERNAL cache entries

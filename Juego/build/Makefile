@@ -129,6 +129,30 @@ JuegoNuevo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JuegoNuevo.dir/build.make CMakeFiles/JuegoNuevo.dir/build
 .PHONY : JuegoNuevo/fast
 
+src/Pajaro.o: src/Pajaro.cpp.o
+.PHONY : src/Pajaro.o
+
+# target to build an object file
+src/Pajaro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JuegoNuevo.dir/build.make CMakeFiles/JuegoNuevo.dir/src/Pajaro.cpp.o
+.PHONY : src/Pajaro.cpp.o
+
+src/Pajaro.i: src/Pajaro.cpp.i
+.PHONY : src/Pajaro.i
+
+# target to preprocess a source file
+src/Pajaro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JuegoNuevo.dir/build.make CMakeFiles/JuegoNuevo.dir/src/Pajaro.cpp.i
+.PHONY : src/Pajaro.cpp.i
+
+src/Pajaro.s: src/Pajaro.cpp.s
+.PHONY : src/Pajaro.s
+
+# target to generate assembly for a file
+src/Pajaro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/JuegoNuevo.dir/build.make CMakeFiles/JuegoNuevo.dir/src/Pajaro.cpp.s
+.PHONY : src/Pajaro.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... JuegoNuevo"
+	@echo "... src/Pajaro.o"
+	@echo "... src/Pajaro.i"
+	@echo "... src/Pajaro.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

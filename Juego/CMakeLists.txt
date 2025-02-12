@@ -5,7 +5,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 
-add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp)
+add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_SOURCE_DIR}/src/Pajaro.cpp)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
     AtomEngine

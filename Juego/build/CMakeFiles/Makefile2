@@ -81,12 +81,12 @@ clean: CMakeFiles/JuegoNuevo.dir/clean
 CMakeFiles/JuegoNuevo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JuegoNuevo.dir/build.make CMakeFiles/JuegoNuevo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/JuegoNuevo.dir/build.make CMakeFiles/JuegoNuevo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/build/CMakeFiles --progress-num=1,2 "Built target JuegoNuevo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cristian_dev/Documentos/C++/Atom-Engine/Juego/build/CMakeFiles --progress-num=1,2,3 "Built target JuegoNuevo"
 .PHONY : CMakeFiles/JuegoNuevo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/JuegoNuevo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/JuegoNuevo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/build/CMakeFiles 0
 .PHONY : CMakeFiles/JuegoNuevo.dir/rule

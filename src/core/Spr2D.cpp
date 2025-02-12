@@ -24,6 +24,7 @@ sf::Sprite Spr2D::GetSprite() {
 
 void Spr2D::draw(sf::RenderWindow& window) {
     window.draw(*this->sprite);
+
 }
 
 void Spr2D::SetPosition(AtomMath::Vector2 position) {

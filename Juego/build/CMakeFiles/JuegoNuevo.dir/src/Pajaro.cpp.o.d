@@ -1,5 +1,5 @@
-CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: \
- /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/main.cpp \
+CMakeFiles/JuegoNuevo.dir/src/Pajaro.cpp.o: \
+ /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/Pajaro.cpp \
  /usr/include/stdc-predef.h \
  /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/../include/AtomEngine.h \
  /usr/local/include/SFML/Graphics/Sprite.hpp \
@@ -273,5 +273,4 @@ CMakeFiles/JuegoNuevo.dir/src/main.cpp.o: \
  /usr/local/include/SFML/Window/Context.hpp \
  /usr/local/include/SFML/Window/Cursor.hpp \
  /usr/local/include/SFML/Window/Touch.hpp \
- /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/../include/AtomMath.h \
- /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/./Pajaro.cpp
+ /home/cristian_dev/Documentos/C++/Atom-Engine/Juego/src/../include/AtomMath.h
