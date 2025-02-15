@@ -1,0 +1,7 @@
+{
+  "name": "atom-engine",
+  "version": "0.0.2",
+  "dependencies": [
+    "sfml[core,graphics,audio,network,window]"
+  ]
+}

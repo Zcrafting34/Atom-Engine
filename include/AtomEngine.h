@@ -1,6 +1,6 @@
 #ifndef ATOM_ENGINE_H
 #define ATOM_ENGINE_H
-#include <SFML/Graphics/Sprite.hpp>
+
 #include <sys/types.h>
 #pragma once
 
@@ -8,11 +8,10 @@
 #include <memory>
 #include <vector>
 #include <string>
-#include "../../include/SFML/Audio.hpp"
-#include "../../include/SFML/Graphics.hpp"
-#include <SFML/Graphics/RenderWindow.hpp>
-#include <SFML/Window/VideoMode.hpp>
-#include <optional>
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+//#include <optional>
 #include "AtomMath.h"
 
 class GameObject;

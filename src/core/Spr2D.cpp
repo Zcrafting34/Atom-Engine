@@ -4,12 +4,22 @@
 #include <SFML/System/Vector2.hpp>
 
 Spr2D::Spr2D(std::string _name, AtomMath::Vector2 _position, const char* _texture) : Atom2D(_name, _position) {
-    this->texture = new sf::Texture(_texture);
+    sf::Texture* texture = new sf::Texture();
+    if (!texture -> loadFromFile(_texture)) {
+        std::cerr<<"Error al cargar la Textura";
+        return;
+    }
+
+    this->texture = texture;
     this->sprite = new sf::Sprite(*this->texture);
     this->sprite->setPosition(sf::Vector2f(this->transform.position.x, this->transform.position.y));
 }
 Spr2D::Spr2D(std::string _name, const char* _texture) : Atom2D(_name) {
-    this->texture = new sf::Texture(_texture);
+    sf::Texture* texture = new sf::Texture();
+    if (!texture -> loadFromFile(_texture)) {
+        std::cerr<<"Error al cargar la Textura";
+        return;
+    }
     this->sprite = new sf::Sprite(*this->texture);
 }
 

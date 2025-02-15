@@ -1,0 +1,10 @@
+^C:\USERS\ADMIN\DOCUMENTS\ATOM-ENGINE\JUEGO\BUILD\CMAKEFILES\94D6D4C1EC64DAB6A03CD8BB4C312B1D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Admin/Documents/Atom-Engine/Juego -BC:/Users/Admin/Documents/Atom-Engine/Juego/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Admin/Documents/Atom-Engine/Juego/build/JuegoNuevo.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

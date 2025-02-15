@@ -16,11 +16,15 @@ int Window::Run(GameObject* scene) {
     );
 
     while (window.isOpen()){
-
-        while (const std::optional event = window.pollEvent()) {
-            if (event->is<sf::Event::Closed>()) window.close();
+        
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            // Close window: exit
+            if (event.type == sf::Event::Closed)
+                window.close();
         }
-
+ 
         window.clear(sf::Color::White);
         scene->draw(window);
         window.display();
