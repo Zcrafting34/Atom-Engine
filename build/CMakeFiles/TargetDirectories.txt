@@ -1,3 +1,0 @@
-C:/Users/Cristian Dev/Documents/workspace/CPP/Atom-Engine/build/CMakeFiles/AtomEngine.dir
-C:/Users/Cristian Dev/Documents/workspace/CPP/Atom-Engine/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Cristian Dev/Documents/workspace/CPP/Atom-Engine/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(AtomEngine VERSION 0.0.2)
 
-set(CMAKE_PREFIX_PATH "C:/Users/Admin/Documents/Atom-Engine/vcpkg_installed/x64-windows/share")
+set(CMAKE_PREFIX_PATH "./vcpkg_installed/x64-windows/share")
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 set( SOURCE_FILES
