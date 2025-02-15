@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Cristian Dev\Documents\workspace\CPP\Atom-Engine\build\CMakeFiles\49ed91bd9037de13e2768a2ff1e6a73f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{071899A9-6104-3993-A8F6-08580ED583A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
